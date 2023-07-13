@@ -1,0 +1,2551 @@
+<!-- include IE9/10 checks here-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+    <head>
+        <!-- t_main_1col_student2.ftl : used for CSI Login Page -->
+        <title>Enrolment Details - Canadian Securities Institute</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="initial-scale=1">
+        <base href="https://www.csi.ca/student/en_ca/">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Cache-Control" content="max-age=3600"/>
+        <!-- include scripts -->
+        <META NAME="ROBOTS" CONTENT="NOINDEX">
+        <!-- mycsi context for tabbed student centre -->
+        <!-- Google Tag Manager -->
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750">
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0]
+                  , j = d.createElement(s)
+                  , dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                var n = d.querySelector('[nonce]');
+                n && j.setAttribute('nonce', n.nonce || n.getAttribute('nonce'));
+                f.parentNode.insertBefore(j, f);
+            }
+            )(window, document, 'script', 'dataLayer', 'GTM-K3LP9F');
+        </script>
+        <!-- End Google Tag Manager -->
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" src="../inc/vendor/jquery/jquery-3.5.1.min.js"></script>
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" src="../inc/vendor/bootstrap/4.5.2/bootstrap.min.js"></script>
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" src="../inc/vendor/moment/moment.js"></script>
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" src="../inc/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript" src="../inc/vendor/tabSlideOut/jquery.tabSlideOut.v1.3.js"></script>
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" src="../inc/vendor/chartjs/Chart.bundle.min.js"></script>
+        <!--<script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" src="../inc/jscript/exit_overlay/exit_modal.js"></script>-->
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750">
+
+            $(document).ready(function() {
+                $(".col-md-4.d-flex.align-items-center img").mouseover(function() {
+                    $(".col-md-4.d-flex.align-items-center img").attr("src", "images/BannerButton-hover.png");
+                });
+                $(".col-md-4.d-flex.align-items-center img").mouseout(function() {
+                    $(".col-md-4.d-flex.align-items-center img").attr("src", "images/BannerButton.png");
+                });
+            });
+        </script>
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" language="javascript">
+            var $ = jQuery.noConflict();
+
+            function ExitEnrolment() {
+                if (confirm("<common:translatekey key='enrolment.exit.confirm'/>")) {
+                    document.location = "../exitEnrolment.do";
+                }
+            }
+        </script>
+        <!--Mainmenu Scripts-->
+        <!--<script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript" src="../inc/jscript/main_menu/jquery-accessibleMegaMenu.js"></script>
+<script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript" src="../inc/jscript/main_menu/main.js"></script>-->
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript" src="../inc/jscript/fontsizeswitcher.js"></script>
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript" src="../inc/jscript/taxReceipt.js"></script>
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript" src="../inc/jscript/csiTools.js"></script>
+        <!--<meta name="verify-v1" content="XiBjFO7Ovj4XlkUbuxJB3P7LB/JMKq4XxDOC6kgrhGU=" />-->
+        <meta name="msvalidate.01" content="3372F320627EE53C16160A7E6948CA1E"/>
+        <!--Organization Structure Data -->
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type='application/ld+json'>
+             
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "Canadian Securities Institute",
+  "url": "https://www.csi.ca/student/en_ca/home.xhtml",
+  "logo": "https://www.csi.ca/student/inc/images/logo-CSI-MATCS.gif",
+  "description": "The Canadian Securities Institute (CSI) has been setting the standard for excellence in life-long education for financial professionals for more than 45 years. CSI is part of Moody's Analytics Learning Solutions, which offers education programs and credentials throughout the world.",
+    "telephone": "1-866-866-2601 "
+  }
+}
+ 
+        </script>
+        <!--Website Structure Data -->
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type='application/ld+json'>
+             
+{
+  "@context": "http://www.schema.org",
+  "@type": "WebSite",
+  "name": "Canadian Securities Institute",
+  "alternateName": "CSI",
+  "url": "https://www.csi.ca/student/en_ca/home.xhtml"
+}
+ 
+        </script>
+        <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript" src="../inc/jscript/yuiTools.js"></script>
+        <!-- END include scripts -->
+        <!-- include local stylesheets -->
+        <!-- mycsi context for tabbed student centre -->
+        <link rel="stylesheet" type="text/css" href="../inc/css/default.css?v=3.0"/>
+        <!-- mycsi css is provided by I.S. team. Do not remove -->
+        <link rel="stylesheet" type="text/css" href="../inc/css/mycsi.css?v=1.0"/>
+        <!-- mycsi css is provided by I.S. team. Do not remove -->
+        <link rel="stylesheet" href="../inc/vendor/fontawesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../inc/vendor/bootstrap/4.5.2/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../inc/css/mainmenu/WP-Menu.css">
+        <link rel="stylesheet" type="text/css" href="../inc/css/default_print.css" media="print"/>
+        <link rel="stylesheet" type="text/css" href="../inc/css/tab_view.css?v=1.0">
+        <link title="small" href="../inc/css/page-small.css" type="text/css" rel="alternate stylesheet"/>
+        <link title="large" href="../inc/css/page-large.css" type="text/css" rel="alternate stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="../inc/css/activepages.css?v=2.1"/>
+        <link rel="stylesheet" type="text/css" href="../inc/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"/>
+        <!-- END include local stylesheets -->
+    </head>
+    <body>
+        <!-- Header row - Logos-->
+        <section class="header">
+            <div class="top-band"></div>
+            <div class="container">
+                <div class="row header"></div>
+            </div>
+        </section>
+        <!-- NAV include goes here Start -->
+        <!-- Start menu -->
+        <header class="mainHeader" id="mainHeader">
+            <section class="headerTop py-2 position-relative">
+                <div class="headerSearch position-absolute">
+                    <form role="search" method="get" class="search-form" id="searchForm" action="/en/">
+                        <input type="text" autofocus="true" id="search-form-1" oninput="hideQuickLinks()" class="search-field" value="" name="s" placeholder="Search">
+                        <input type="submit" class="search-submit" value="Search">
+                        <span class="clearHideSearch d-inline-block"></span>
+                    </form>
+                    <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript">
+                        function hideQuickLinks() {
+                            $(".headerQuickLink").hide();
+                        }
+                    </script>
+                    <div class="headerQuickLink">
+                        <span class="d-block">Quick Links</span>
+                        <div class="hQuickLink">
+                            <ul id="menu-search-quick-links" class="menu">
+                                <li id="menu-item-10355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10355">
+                                    <a href="/en/explore/csc-vs-ifc/">Compare CSC® and IFC</a>
+                                </li>
+                                <li id="menu-item-10356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10356">
+                                    <a href="/en/en/learning/courses/">Explore Course Catalogue</a>
+                                </li>
+                                <li id="menu-item-10357" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10357">
+                                    <a href="#">Extend Your Course</a>
+                                </li>
+                                <li id="menu-item-10358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10358">
+                                    <a href="#">Book / Reschedule / Cancel Your Exam</a>
+                                </li>
+                                <li id="menu-item-10359" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10359">
+                                    <a href="#">Frequently Asked Questions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchTrans"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-right">
+                            <ul class="top-menu list-inline text-right m-0 text-white">
+                                <li class="list-inline-item position-relative">
+                                    <a class="d-inline-block rightDivide mr-3 align-middle searchTag" href="#">
+                                        <img src="/wp-content/uploads/2021/02/Search.svg" alt="Search" width="20">
+                                    </a>
+                                    <a class="d-inline-block align-middle" href="shopping_cart/shopping_cart.jsp">
+                                        <input type="hidden" name="plang" id="plang" value="en_ca">
+                                        <img src="/wp-content/themes/csi-et/images/Cart.svg" alt="Cart" width="22">
+                                        <span id="item-number"></span>
+                                    </a>
+                                    <div class="cartDarkBg"></div>
+                                </li>
+                                <li id="text-3" class="widget widget_text">
+                                    <div class="textwidget">
+                                        <p>Choose a language:</p>
+                                    </div>
+                                </li>
+                                <li id="icl_lang_sel_widget-2" class="widget widget_icl_lang_sel_widget">
+                                    <div class="wpml-ls-sidebars-sidebar-2 wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown">
+                                        <ul>
+                                            <li tabindex="0" class="wpml-ls-slot-sidebar-2 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-last-item wpml-ls-item-legacy-dropdown">
+                                                <div class="dropdown">
+                                                    <button class="dropbtn" style="font-family: Arial, Helvetica, sans-serif;">English</button>
+                                                    <div class="dropdown-content">
+                                                        <a href="#">
+                                                            <a href="https://www.csi.ca/student/student/courseDetail.do?sceid=3292439&amp;lang=fr_ca">Fran &ccedil;ais</a>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item position-relative lang-en loginlogout">
+                                    <a href="/student/en_ca/logon/login.xhtml" class="btnlogin" style="font-family: Arial, Helvetica, sans-serif;">Login</a>
+                                    <span class='loggedin'></span>
+                                    <a href="/student/logout.do" class="btnlogout" style="display:none;">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--MENUS MEGA AND MOBILE -->
+            <section class="headerBottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="logoWarp">
+                                <a href="https://www.csi.ca/en/" class="custom-logo-link" rel="home" title="Canadian Securities Institute Home">
+                                    <img src="https://www.csi.ca/wp-content/uploads/2021/02/logo.svg" class="custom-logo" alt="Canadian Securities Institute Home">
+                                </a>
+                            </div>
+                            <!-- Hamburger Icon -->
+                            <span class="mobileButton d-inline-block d-lg-none position-absolute">
+                                <em class="fa fa-bars"></em>
+                            </span>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 menuMain text-lg-right d-none d-lg-block">
+                            <ul>
+                                <li class="mega_menu_li">
+                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Learning</a>
+                                    <ul class="dropd text-left">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-3 left-p">
+                                                    <label class="explore">EXPLORE</label>
+                                                    <ul class="nav nav-pills" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-toggle="pill" href="#Licen_menuTab_1">Licensing                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Certi_menuTab_2">Certificate Pathways                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Desig_menuTab_3">Designation Pathways                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Cours_menuTab_4">Courses By Topic Area                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Conti_menuTab_5">Continuing Education                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#AllCo_menuTab_6">All Courses                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Previ_menuTab_7">Previously Offered Courses                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-9 right-p">
+                                                    <div class="tab-content">
+                                                        <div id="Licen_menuTab_1" class="tab-pane active">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuList">
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/csc/">
+                                                                                Canadian Securities Course (CSC<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/ifc/">Investment Funds in Canada (IFC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/cph/">
+                                                                                Conduct and Practices Handbook Course (CPH<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/wme/">
+                                                                                Wealth Management Essentials (WME<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/dfol/">Derivatives Fundamentals and Options Licensing Course (DFOL)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/imt/">
+                                                                                Investment Management Techniques (IMT<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/ais/">Advanced Investment Strategies (AIS)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/pmt/">
+                                                                                Portfolio Management Techniques (PMT<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/pdo/">Partners, Directors and Senior Officers Course (PDO)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/bco/">Branch Compliance Officer's Course (BCO)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/idsc/">Investment Dealer Supervisors Course (IDSC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/wme-fp/">WME Course For Financial Planners (WME-FP)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/cco/">Chief Compliance Officers Qualifying Examination (CCO)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/dfc/">Derivatives Fundamentals Course (DFC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/ttc/">Trader Training Course (TTC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/opsc/">Options Supervisors Course (OPSC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/flc/">Futures Licensing Course (FLC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/wme-im/">WME Course For Investment Managers (WME-IM)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/olc/">Options Licensing Course (OLC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/nec/">New Entrants Course (NEC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/wme-wm/">WME Course For Wealth Managers (WME-WM)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/cfo/">Chief Financial Officers Qualifying Examination (CFO)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/ccse/">Canadian Commodity Supervisors Exam (CCSE)</a>
+                                                                        </li>
+                                                                        <li class="viewAllLink">
+                                                                            <a href="https://www.csi.ca/en/learning/courses/licensing/">
+                                                                                <small>View All Licensing Courses</small>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        Conquer the Financial Services Landscape with the CSC<sup>&reg;</sup>
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <p>Get free study tools when you buy the CSC until July 31</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="https://www.csi.ca/en/explore/csc-study-tools/leads/">Get Started</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Certi_menuTab_2" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuList">
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cfsa/">Certificate in Financial Services Advice (CFSA)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cafa/">Certificate in Advanced Financial Advice (CAFA)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/caia/">Certificate in Advanced Investment Advice (CAIA)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/csbb/">Certificate in Small Business Banking (CSBB)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cita/">Certificate in Technical Analysis (CITA)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cidc/">Certificate in Investment Dealer Compliance (CIDC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cdms/">Certificate in Derivatives Market Strategies (CDMS)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/crs/">Certificate in Retirement Strategy (CRS)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cets/">Certificate in Estate Planning &Trust Strategy (CETS)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cicc/">Certificate in Commercial Credit (CICC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cfit/">Certificate in Fixed Income Trading and Sales (CFIT)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/ceqt/">Certificate in Equity Trading and Sales (CEQT)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cpb/">Certificate in Personal Banking (CPB)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/cbm/">Certificate In Bank Management (CBM)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/certificate-pathways/mcai/">Micro-Certificate in Alternative Investments (MCAI)</a>
+                                                                        </li>
+                                                                        <li class="viewAllLink">
+                                                                            <a href="/learning/certificate-pathways/">
+                                                                                <small>View All Certificate Pathways</small>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">CFSA: Preferred Credential for Personal Bankers                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Certificate-Pathways-CFSA.png" alt="CFSA: Preferred Credential for Personal Bankers">
+                                                                        <p>Better understand your clients' unique financial needs and goals to build positive client relationships with the CFSA.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/learning/certificate-pathways/cfsa/">Get Started</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Desig_menuTab_3" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/learning/designation-pathways/fcsi/">
+                                                                                Fellow of CSI (FCSI<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/designation-pathways/pfp/">
+                                                                                Personal Financial Planner (PFP<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/designation-pathways/cim/">
+                                                                                Chartered Investment Manager (CIM<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/designation-pathways/ciwm/">Certified International Wealth Manager (CIWM)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/designation-pathways/dfsa/">
+                                                                                Designated Financial Services Advisor (DFSA<sup>&trade;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/designation-pathways/mti/">
+                                                                                Estate &Trust Professional (MTI<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/designation-pathways/cfp/">
+                                                                                CSI Path to Certified Financial Planner (CFP<sup>&reg;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/designation-pathways/qafp/">
+                                                                                CSI Path to Qualified Associate Financial Planner (QAFP<sup>&trade;</sup>
+                                                                                )
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/designation-pathways/iqpf">CSI Path to Financial Planning Program  -  Quebec (IQPF)</a>
+                                                                        </li>
+                                                                        <li class="viewAllLink">
+                                                                            <a href="/learning/designation-pathways/">
+                                                                                <small>View All Designation Pathways</small>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        PFP<sup>&reg;</sup>
+                                                                        Approved Under FSRA Title Regulation                                                                        
+                                                                    
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Designation-Pathways-PFP-Approval.png" alt="PFP<sup>&reg;</sup> Approved Under FSRA Title Regulation">
+                                                                        <p>
+                                                                            FSRA has approved the Personal Financial Planner (PFP<sup>&reg;</sup>
+                                                                            ) designation for Financial Planner title use in Ontario. 
+                                                                        </p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/pfp/">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Cours_menuTab_4" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/retailbanking/">Retail Banking</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/financial-planning-insurance/">Financial Planning &Insurance</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/investment-management-trading/">Investment Management &Trading</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/wealth-management-private-banking/">Wealth Management &Private Banking</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/business-banking/">Business Banking</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/leadership-management-compliance/">Leadership, Management &Compliance</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/explore/career-map/">Explore Career Map</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Explore Multiple Career Paths                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Courses-by-Topic-Area-Career-Map.png" alt="Explore Multiple Career Paths">
+                                                                        <p>Explore different roles and opportunities available in the financial services industry and view the recommended courses and credentials.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/explore/career-map/">Get Started</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Conti_menuTab_5" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/learning/continuing-education/">Continuing Education Finder Tool</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/corporate-solutions/">Continuing Education Solutions for Corporates</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/continuing-education/chart">View All Continuing Education Credits Information</a>
+                                                                        </li>
+                                                                        <li class="viewAllLink">
+                                                                            <a href="/en/learning/courses#continuingeducation">
+                                                                                <small>View All Continuing Education Courses</small>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Meet CE Requirements Quickly and Easily                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Continuing-Education-CE-Finder.png" alt="Meet CE Requirements Quickly and Easily">
+                                                                        <p>Explore continuing education courses and meet your requirements for CSI, IIROC, CSF and other professional associations or certifications.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/learning/continuing-education/">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="AllCo_menuTab_6" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/pfsa/">Personal Financial Services Advice (PFSA)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/fp1/">Financial Planning I (FP I)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/fp2/">Financial Planning II (FP II)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/fpsu/">Financial Planning Supplement (FPSU)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/iatp/">Investment Advisors Training Program (IATP)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/fpic/">Financial Planning Integration Course (FPIC)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/afp/">Applied Financial Planning Certification Exam (AFP)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/ciwm-ce/">CIWM Certification Examination</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/llqp/">Life Licence Qualification Program Insurance Course (LLQP)</a>
+                                                                        </li>
+                                                                        <li class="viewAllLink">
+                                                                            <a href="/en/learning/courses">
+                                                                                <small>View All Courses</small>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Drive Effective Client Conversations                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/All-Courses-PFSA.png" alt="Drive Effective Client Conversations">
+                                                                        <p>Get started with the Personal Financial Services Advice (PFSA) course to enhance your soft skills and build profitable client relationships.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/learning/courses/pfsa/ ">Get Started</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Previ_menuTab_7" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/learning/courses/previously-granted/">View All Previously Offered Courses</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Explore Multiple Career Paths                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Courses-by-Topic-Area-Career-Map.png" alt="Explore Multiple Career Paths">
+                                                                        <p>Explore different roles and opportunities available in the financial services industry and view the recommended courses and credentials.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/explore/career-map/">Get Started</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="mega_menu_li">
+                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Exams & Support</a>
+                                    <ul class="dropd text-left">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-3 left-p">
+                                                    <label class="explore">EXPLORE</label>
+                                                    <ul class="nav nav-pills" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-toggle="pill" href="#Exams_menuTab_1">Exams                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Stude_menuTab_2">Student Support                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-9 right-p">
+                                                    <div class="tab-content">
+                                                        <div id="Exams_menuTab_1" class="tab-pane active">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/exams">Choosing an Exam Format</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/exams/study-tips/">Exam Study Tips</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/support/faqs/#bookreschedulecancelanexam">Book/Reschedule/Cancel</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/support/faqs/#preparingforaremotelyproctoredexam">Prepare for a Remotely Proctored Exam</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/support/faqs/#preparingforwritinganinpersonexamatatestcentre">Prepare for an In-Person Exam at a Test Centre</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/support/faqs/#writinganexam">Writing Your Exam</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/support/faqs/#examresults">Exam Results</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        Canadian Securities Course CSC<sup>&reg;</sup>
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/CSC-Review-Webinars-Dropdown-Banner.png" alt="Canadian Securities Course CSC<sup>&reg;</sup>">
+                                                                        <p>Take the first step towards meeting your career goals.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/learning/courses/csc/">Enrol Today</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Stude_menuTab_2" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/support/faqs/">Frequently Asked Questions</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/support/forms/">Forms</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/support/fees/">Fees</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/support/policies/">Student Policies</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/support/policies/accessibility/">Accessibility Policies</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/support/orientation/">New Student Orientation</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/support/covid-updates/">Covid-19 Updates</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/about/contact/">Contact Us</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Preparing to Take Your CSI Exam?                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Student-Support-Exam-Format.png" alt="Preparing to Take Your CSI Exam?">
+                                                                        <p>Write your exam through Remote Proctoring from any location (including your home) or In-Person at one of our test centres.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/exams/">Get Started</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="mega_menu_li">
+                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Credentials</a>
+                                    <ul class="dropd text-left">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-3 left-p">
+                                                    <label class="explore">EXPLORE</label>
+                                                    <ul class="nav nav-pills" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-toggle="pill" href="#Certi_menuTab_1">Certificates &Designations                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Fello_menuTab_2">
+                                                                Fellow of CSI (FCSI<sup>&reg;</sup>
+                                                                )                                                            
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Perso_menuTab_3">
+                                                                Personal Financial Planner (PFP<sup>&reg;</sup>
+                                                                )                                                            
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Chart_menuTab_4">
+                                                                Chartered Investment Manager (CIM<sup>&reg;</sup>
+                                                                )                                                            
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Certi_menuTab_5">Certified International Wealth Manager (CIWM)                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Desig_menuTab_6">
+                                                                Designated Financial Services Advisor (DFSA<sup>&trade;</sup>
+                                                                )                                                            
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Estat_menuTab_7">
+                                                                Estate &Trust Professional (MTI<sup>&reg;</sup>
+                                                                )                                                            
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-9 right-p">
+                                                    <div class="tab-content">
+                                                        <div id="Certi_menuTab_1" class="tab-pane active">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/credentials/about-certificates-and-designations">About Certificates &Designations</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ethical-misconduct-process">Ethical Misconduct Process</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ethics-committee">Designations Ethics Committee</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/wall-certificates/">Custom Wall Certificate Frames</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/previously-granted">View All Previously Granted Credentials</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Credentials That Matter                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/About-Certificates-Designations.png" alt="Credentials That Matter">
+                                                                        <p>Meet the highest standards of experience &education for financial professionals with CSI certificates, designations &fellowship.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/about-certificates-and-designations/ ">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Fello_menuTab_2" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/credentials/fcsi">
+                                                                                About the FCSI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/fcsi/requirements">
+                                                                                Requirements to Earn the FCSI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/fcsi/maintenance">
+                                                                                Maintaining the FCSI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/fcsi/benefits">
+                                                                                Benefits of Holding the FCSI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/fcsi/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/fcsi/for-consumers">Information for Consumers</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/fcsi/frequently-asked-questions">Frequently Asked Questions</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/fcsi/apply/">
+                                                                                Apply for the FCSI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/fcsi/members/">Member Login</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        FCSI<sup>&reg;</sup>
+                                                                        -  The Highest Honour in Financial Services                                                                        
+                                                                    
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/About-FCSI.png" alt="FCSI<sup>&reg;</sup>  -  The Highest Honour in Financial Services">
+                                                                        <p>
+                                                                            Join an elite group of leaders in financial services and make a meaningful impact for your clients with the Fellow of CSI (FCSI<sup>&reg;</sup>
+                                                                            ).
+                                                                        </p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/fcsi/">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Perso_menuTab_3" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/credentials/pfp">
+                                                                                About the PFP<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/pfp/requirements">
+                                                                                Requirements to Earn the PFP<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/pfp/maintenance">
+                                                                                Maintaining the PFP<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/pfp/benefits">
+                                                                                Benefits of Holding the PFP<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/pfp/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/pfp/for-consumers">Information for Consumers</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/pfp/frequently-asked-questions">Frequently Asked Questions</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/pfp/apply/">
+                                                                                Apply for the PFP<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/pfp/members/">Member Login</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        PFP<sup>&reg;</sup>
+                                                                        -  The Premier Credential for Financial Planners                                                                        
+                                                                    
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Designation-Pathways-PFP-Approval.png" alt="PFP<sup>&reg;</sup>  -  The Premier Credential for Financial Planners">
+                                                                        <p>
+                                                                            Master financial planning skills with the ISO and FSRA-certified Personal Financial Planner (PFP<sup>&reg;</sup>
+                                                                            ) designation.
+                                                                        </p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/pfp/">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Chart_menuTab_4" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/credentials/cim">
+                                                                                About the CIM<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/cim/requirements">
+                                                                                Requirements to Earn the CIM<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/cim/maintenance">
+                                                                                Maintaining the CIM<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/cim/benefits">
+                                                                                Benefits of Holding the CIM<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/cim/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/cim/for-consumers">Information for Consumers</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/cim/frequently-asked-questions">Frequently Asked Questions</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/cim/apply/">
+                                                                                Apply for the CIM<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/cim/members/">Member Login</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        CIM<sup>&reg;</sup>
+                                                                        -  The Recognized Credential for Investment Managers                                                                        
+                                                                    
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/About-CIM.png" alt="CIM<sup>&reg;</sup>  -  The Recognized Credential for Investment Managers">
+                                                                        <p>
+                                                                            Learn how to manage money on a discretionary basis for sophisticated clients with Chartered Investment Manager (CIM<sup>&reg;</sup>
+                                                                            ).
+                                                                        </p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/cim/ ">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Certi_menuTab_5" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/credentials/ciwm">About the CIWM</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ciwm/requirements">Requirements to Earn the CIWM</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ciwm/maintenance">Maintaining the CIWM</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ciwm/benefits">Benefits of Holding the CIWM</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ciwm/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ciwm/for-consumers">Information for Consumers</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ciwm/frequently-asked-questions">Frequently Asked Questions</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ciwm/apply/">Apply for the CIWM</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/ciwm/members/">Member Login</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">CIWM  -  The Leading Credential for Wealth Managers                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/About-CIWM.png" alt="CIWM  -  The Leading Credential for Wealth Managers">
+                                                                        <p>Establish your credibility to address the unique needs of affluent clients with Certified International Wealth Manager (CIWM).</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/ciwm/ ">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Desig_menuTab_6" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/credentials/dfsa/">
+                                                                                About the DFSA<sup>&trade;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/dfsa/requirements">
+                                                                                Requirements to Earn the DFSA<sup>&trade;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/dfsa/maintenance">
+                                                                                Maintaining the DFSA<sup>&trade;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/dfsa/benefits">
+                                                                                Benefits of Holding the DFSA<sup>&trade;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/dfsa/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/dfsa/for-consumers">Information for Consumers</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">DFSA - The leading credential for financial advice in Canada                                                                        
+                                                                    </h2>
+                                                                    <div class="block22"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Estat_menuTab_7" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/credentials/mti">
+                                                                                About the MTI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/mti/requirements">
+                                                                                Requirements to Earn the MTI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/mti/maintenance">
+                                                                                Maintaining the MTI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/mti/benefits">
+                                                                                Benefits of Holding the MTI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/mti/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/mti/for-consumers">Information for Consumers</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/mti/frequently-asked-questions">Frequently Asked Questions</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/mti/apply/">
+                                                                                Apply for the MTI<sup>&reg;</sup>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/credentials/mti/members/">Member Login</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        MTI<sup>&reg;</sup>
+                                                                        -  Prestigious Credential for Trust &Wealth Managers                                                                        
+                                                                    
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/About-MTI.png" alt="MTI<sup>&reg;</sup>  -  Prestigious Credential for Trust & Wealth Managers">
+                                                                        <p>
+                                                                            Gain expertise in the regulations and tax implications that are crucial for management and transfer of wealth with MTI<sup>&reg;</sup>
+                                                                            .
+                                                                        </p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/mti/">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="no_mega_menu">
+                                    <a href="/corporate-solutions/" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Corporate Solutions</a>
+                                <li class="mega_menu_li">
+                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Platforms</a>
+                                    <ul class="dropd text-left">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-3 left-p">
+                                                    <label class="explore">EXPLORE</label>
+                                                    <ul class="nav nav-pills" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-toggle="pill" href="#CSILi_menuTab_1">CSI Live                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Finan_menuTab_2">Financial Literacy Month                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#CSIPo_menuTab_3">CSI Podium                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#CSITa_menuTab_4">CSI TalentPro                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-9 right-p">
+                                                    <div class="tab-content">
+                                                        <div id="CSILi_menuTab_1" class="tab-pane active">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/platforms/live/">View Upcoming &On-Demand Webinars</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Transitioning to a Financial Career in Canada: A Newcomer's Guide | May 10, 2023                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <p>Hear from industry experts about how you can transition to the Canadian financial services workforce as smoothly as possible.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="https://www.csi.ca/en/webinars/transitioning-to-a-financial-career-in-canada-a-newcomers-guide/">View Replay</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Finan_menuTab_2" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/platforms/financial-literacy-month/">View All Financial Literacy Month Events</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Webinars to Boost Financial Literacy                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/FLM-Purpose.png" alt="Webinars to Boost Financial Literacy">
+                                                                        <p>During Financial Literacy Month we aim to help Canadians understand their finances better &navigate the changing economic landscape.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/platforms/financial-literacy-month/ ">View Webinars</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="CSIPo_menuTab_3" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/platforms/csi-podium/">Host A Webinar With CSI</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Become a Speaker With CSI                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/CSI-Podium.png" alt="Become a Speaker With CSI">
+                                                                        <p>CSI Podium offers designation holders opportunities to speak on topics to benefit their clients, colleagues, and the investing public via webinars.</p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/platforms/csi-podium/ ">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="CSITa_menuTab_4" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="https://talentpro.csi.ca/en/">Find The Right Candidates, Faster</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">Find Qualified Candidates Faster                                                                        
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/CSI-TalentPro.png" alt="Find Qualified Candidates Faster">
+                                                                        <p>Talent Pro connects organizations with qualified and licensed candidates to fill active opportunities in the banking industry. </p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="https://talentpro.csi.ca/en/ ">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="mega_menu_li">
+                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">About</a>
+                                    <ul class="dropd text-left">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-3 left-p">
+                                                    <label class="explore">EXPLORE</label>
+                                                    <ul class="nav nav-pills" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-toggle="pill" href="#OurCo_menuTab_1">Our Company                                                             </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#OurPe_menuTab_2">Our People                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-toggle="pill" href="#Conne_menuTab_3">Connect With Us                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-9 right-p">
+                                                    <div class="tab-content">
+                                                        <div id="OurCo_menuTab_1" class="tab-pane active">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/about/">About CSI</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/about/press-releases/">Press Releases</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/about/partners/">Partners</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/en/about/contact/">Contact Us</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        PFP<sup>&reg;</sup>
+                                                                        Approved Under FSRA Title Regulation                                                                        
+                                                                    
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Designation-Pathways-PFP-Approval.png" alt="PFP<sup>&reg;</sup> Approved Under FSRA Title Regulation">
+                                                                        <p>
+                                                                            FSRA has approved the Personal Financial Planner (PFP<sup>&reg;</sup>
+                                                                            ) designation for Financial Planner title use in Ontario.
+                                                                        </p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/pfp/ ">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="OurPe_menuTab_2" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="/en/about/leadership/">Leadership</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="https://careers.moodys.com/">Careers</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        PFP<sup>&reg;</sup>
+                                                                        Approved Under FSRA Title Regulation                                                                        
+                                                                    
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Designation-Pathways-PFP-Approval.png" alt="PFP<sup>&reg;</sup> Approved Under FSRA Title Regulation">
+                                                                        <p>
+                                                                            FSRA has approved the Personal Financial Planner (PFP<sup>&reg;</sup>
+                                                                            ) designation for Financial Planner title use in Ontario.
+                                                                        </p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/pfp/">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Conne_menuTab_3" class="tab-pane ">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <ul class="rightMenuListHide">
+                                                                        <li>
+                                                                            <a href="https://linkedin.com/company/csi-canada">LinkedIn</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="https://www.facebook.com/csiglobal">Facebook</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="https://www.instagram.com/canadian_securities_institute/">Instagram</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="https://twitter.com/CSIGlobalEd">Twitter</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="https://www.youtube.com/user/CSIGlobalEd/">YouTube</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-5 featuredProdMenu">
+                                                                    <p class="f-pro">Featured Product</p>
+                                                                    <h2 class="review">
+                                                                        PFP<sup>&reg;</sup>
+                                                                        Approved Under FSRA Title Regulation                                                                        
+                                                                    
+                                                                    </h2>
+                                                                    <div class="block22">
+                                                                        <img src="https://www.csi.ca/wp-content/uploads/2021/02/Designation-Pathways-PFP-Approval.png" alt="PFP<sup>&reg;</sup> Approved Under FSRA Title Regulation">
+                                                                        <p>
+                                                                            FSRA has approved the Personal Financial Planner (PFP<sup>&reg;</sup>
+                                                                            ) designation for Financial Planner title use in Ontario.
+                                                                        </p>
+                                                                        <p class="m-0">
+                                                                            <a class="btn btn-danger" href="/en/credentials/pfp/ ">Learn More</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- Mobile Menu -->
+        <nav class="mobileMenu">
+            <ul>
+                <li>
+                    <a class="nextMenu" href="#">
+                        Learning                        <em class="fa fa-angle-right"></em>
+                    </a>
+                    <a class="topBackMenu" href="#" style="display:none;" title="Back">
+                        <em class="fa fa-angle-left mr-3"></em>
+                        Back
+                    </a>
+                    <ul class="levelMenu-1">
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Licensing <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Licensing
+                                </a>
+                                <li>
+                                    <a href="/en/learning/courses/csc/">
+                                        Canadian Securities Course (CSC<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/ifc/">Investment Funds in Canada (IFC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/cph/">
+                                        Conduct and Practices Handbook Course (CPH<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/wme/">
+                                        Wealth Management Essentials (WME<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/dfol/">Derivatives Fundamentals and Options Licensing Course (DFOL)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/imt/">
+                                        Investment Management Techniques (IMT<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/ais/">Advanced Investment Strategies (AIS)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/pmt/">
+                                        Portfolio Management Techniques (PMT<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/pdo/">Partners, Directors and Senior Officers Course (PDO)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/bco/">Branch Compliance Officer's Course (BCO)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/idsc/">Investment Dealer Supervisors Course (IDSC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/wme-fp/">WME Course For Financial Planners (WME-FP)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/cco/">Chief Compliance Officers Qualifying Examination (CCO)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/dfc/">Derivatives Fundamentals Course (DFC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/ttc/">Trader Training Course (TTC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/opsc/">Options Supervisors Course (OPSC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/flc/">Futures Licensing Course (FLC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/wme-im/">WME Course For Investment Managers (WME-IM)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/olc/">Options Licensing Course (OLC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/nec/">New Entrants Course (NEC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/wme-wm/">WME Course For Wealth Managers (WME-WM)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/cfo/">Chief Financial Officers Qualifying Examination (CFO)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/ccse/">Canadian Commodity Supervisors Exam (CCSE)</a>
+                                </li>
+                                <li class="viewAllLink">
+                                    <a href="https://www.csi.ca/en/learning/courses/licensing/">
+                                        <small>View All Licensing Courses</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Certificate Pathways <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Certificate Pathways
+                                </a>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cfsa/">Certificate in Financial Services Advice (CFSA)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cafa/">Certificate in Advanced Financial Advice (CAFA)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/caia/">Certificate in Advanced Investment Advice (CAIA)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/csbb/">Certificate in Small Business Banking (CSBB)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cita/">Certificate in Technical Analysis (CITA)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cidc/">Certificate in Investment Dealer Compliance (CIDC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cdms/">Certificate in Derivatives Market Strategies (CDMS)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/crs/">Certificate in Retirement Strategy (CRS)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cets/">Certificate in Estate Planning &Trust Strategy (CETS)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cicc/">Certificate in Commercial Credit (CICC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cfit/">Certificate in Fixed Income Trading and Sales (CFIT)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/ceqt/">Certificate in Equity Trading and Sales (CEQT)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cpb/">Certificate in Personal Banking (CPB)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/cbm/">Certificate In Bank Management (CBM)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/certificate-pathways/mcai/">Micro-Certificate in Alternative Investments (MCAI)</a>
+                                </li>
+                                <li class="viewAllLink">
+                                    <a href="/learning/certificate-pathways/">
+                                        <small>View All Certificate Pathways</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Designation Pathways <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Designation Pathways
+                                </a>
+                                <li>
+                                    <a href="/en/learning/designation-pathways/fcsi/">
+                                        Fellow of CSI (FCSI<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/designation-pathways/pfp/">
+                                        Personal Financial Planner (PFP<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/designation-pathways/cim/">
+                                        Chartered Investment Manager (CIM<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/designation-pathways/ciwm/">Certified International Wealth Manager (CIWM)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/designation-pathways/dfsa/">
+                                        Designated Financial Services Advisor (DFSA<sup>&trade;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/designation-pathways/mti/">
+                                        Estate &Trust Professional (MTI<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/designation-pathways/cfp/">
+                                        CSI Path to Certified Financial Planner (CFP<sup>&reg;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/designation-pathways/qafp/">
+                                        CSI Path to Qualified Associate Financial Planner (QAFP<sup>&trade;</sup>
+                                        )
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/designation-pathways/iqpf">CSI Path to Financial Planning Program  -  Quebec (IQPF)</a>
+                                </li>
+                                <li class="viewAllLink">
+                                    <a href="/learning/designation-pathways/">
+                                        <small>View All Designation Pathways</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Courses By Topic Area <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Courses By Topic Area
+                                </a>
+                                <li>
+                                    <a href="/en/learning/courses/retailbanking/">Retail Banking</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/financial-planning-insurance/">Financial Planning &Insurance</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/investment-management-trading/">Investment Management &Trading</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/wealth-management-private-banking/">Wealth Management &Private Banking</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/business-banking/">Business Banking</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/leadership-management-compliance/">Leadership, Management &Compliance</a>
+                                </li>
+                                <li>
+                                    <a href="/en/explore/career-map/">Explore Career Map</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Continuing Education <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Continuing Education
+                                </a>
+                                <li>
+                                    <a href="/en/learning/continuing-education/">Continuing Education Finder Tool</a>
+                                </li>
+                                <li>
+                                    <a href="/en/corporate-solutions/">Continuing Education Solutions for Corporates</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/continuing-education/chart">View All Continuing Education Credits Information</a>
+                                </li>
+                                <li class="viewAllLink">
+                                    <a href="/en/learning/courses#continuingeducation">
+                                        <small>View All Continuing Education Courses</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                All Courses <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    All Courses
+                                </a>
+                                <li>
+                                    <a href="/en/learning/courses/pfsa/">Personal Financial Services Advice (PFSA)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/fp1/">Financial Planning I (FP I)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/fp2/">Financial Planning II (FP II)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/fpsu/">Financial Planning Supplement (FPSU)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/iatp/">Investment Advisors Training Program (IATP)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/fpic/">Financial Planning Integration Course (FPIC)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/afp/">Applied Financial Planning Certification Exam (AFP)</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/ciwm-ce/">CIWM Certification Examination</a>
+                                </li>
+                                <li>
+                                    <a href="/en/learning/courses/llqp/">Life Licence Qualification Program Insurance Course (LLQP)</a>
+                                </li>
+                                <li class="viewAllLink">
+                                    <a href="/en/learning/courses">
+                                        <small>View All Courses</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Previously Offered Courses <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Previously Offered Courses
+                                </a>
+                                <li>
+                                    <a href="/en/learning/courses/previously-granted/">View All Previously Offered Courses</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nextMenu" href="#">
+                        Exams &Support                        <em class="fa fa-angle-right"></em>
+                    </a>
+                    <a class="topBackMenu" href="#" style="display:none;" title="Back">
+                        <em class="fa fa-angle-left mr-3"></em>
+                        Back
+                    </a>
+                    <ul class="levelMenu-1">
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Exams <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Exams
+                                </a>
+                                <li>
+                                    <a href="/en/exams">Choosing an Exam Format</a>
+                                </li>
+                                <li>
+                                    <a href="/en/exams/study-tips/">Exam Study Tips</a>
+                                </li>
+                                <li>
+                                    <a href="/en/support/faqs/#bookreschedulecancelanexam">Book/Reschedule/Cancel</a>
+                                </li>
+                                <li>
+                                    <a href="/en/support/faqs/#preparingforaremotelyproctoredexam">Prepare for a Remotely Proctored Exam</a>
+                                </li>
+                                <li>
+                                    <a href="/en/support/faqs/#preparingforwritinganinpersonexamatatestcentre">Prepare for an In-Person Exam at a Test Centre</a>
+                                </li>
+                                <li>
+                                    <a href="/en/support/faqs/#writinganexam">Writing Your Exam</a>
+                                </li>
+                                <li>
+                                    <a href="/en/support/faqs/#examresults">Exam Results</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Student Support <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Student Support
+                                </a>
+                                <li>
+                                    <a href="/support/faqs/">Frequently Asked Questions</a>
+                                </li>
+                                <li>
+                                    <a href="/support/forms/">Forms</a>
+                                </li>
+                                <li>
+                                    <a href="/support/fees/">Fees</a>
+                                </li>
+                                <li>
+                                    <a href="/support/policies/">Student Policies</a>
+                                </li>
+                                <li>
+                                    <a href="/support/policies/accessibility/">Accessibility Policies</a>
+                                </li>
+                                <li>
+                                    <a href="/support/orientation/">New Student Orientation</a>
+                                </li>
+                                <li>
+                                    <a href="/support/covid-updates/">Covid-19 Updates</a>
+                                </li>
+                                <li>
+                                    <a href="/about/contact/">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nextMenu" href="#">
+                        Credentials                        <em class="fa fa-angle-right"></em>
+                    </a>
+                    <a class="topBackMenu" href="#" style="display:none;" title="Back">
+                        <em class="fa fa-angle-left mr-3"></em>
+                        Back
+                    </a>
+                    <ul class="levelMenu-1">
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Certificates &Designations <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Certificates &Designations
+                                </a>
+                                <li>
+                                    <a href="/en/credentials/about-certificates-and-designations">About Certificates &Designations</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ethical-misconduct-process">Ethical Misconduct Process</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ethics-committee">Designations Ethics Committee</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/wall-certificates/">Custom Wall Certificate Frames</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/previously-granted">View All Previously Granted Credentials</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Fellow of CSI (FCSI<sup>&reg;</sup>
+                                ) <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Fellow of CSI (FCSI<sup>&reg;</sup>
+                                    )
+                                </a>
+                                <li>
+                                    <a href="/en/credentials/fcsi">
+                                        About the FCSI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/fcsi/requirements">
+                                        Requirements to Earn the FCSI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/fcsi/maintenance">
+                                        Maintaining the FCSI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/fcsi/benefits">
+                                        Benefits of Holding the FCSI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/fcsi/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/fcsi/for-consumers">Information for Consumers</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/fcsi/frequently-asked-questions">Frequently Asked Questions</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/fcsi/apply/">
+                                        Apply for the FCSI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/fcsi/members/">Member Login</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Personal Financial Planner (PFP<sup>&reg;</sup>
+                                ) <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Personal Financial Planner (PFP<sup>&reg;</sup>
+                                    )
+                                </a>
+                                <li>
+                                    <a href="/en/credentials/pfp">
+                                        About the PFP<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/pfp/requirements">
+                                        Requirements to Earn the PFP<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/pfp/maintenance">
+                                        Maintaining the PFP<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/pfp/benefits">
+                                        Benefits of Holding the PFP<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/pfp/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/pfp/for-consumers">Information for Consumers</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/pfp/frequently-asked-questions">Frequently Asked Questions</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/pfp/apply/">
+                                        Apply for the PFP<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/pfp/members/">Member Login</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Chartered Investment Manager (CIM<sup>&reg;</sup>
+                                ) <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Chartered Investment Manager (CIM<sup>&reg;</sup>
+                                    )
+                                </a>
+                                <li>
+                                    <a href="/en/credentials/cim">
+                                        About the CIM<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/cim/requirements">
+                                        Requirements to Earn the CIM<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/cim/maintenance">
+                                        Maintaining the CIM<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/cim/benefits">
+                                        Benefits of Holding the CIM<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/cim/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/cim/for-consumers">Information for Consumers</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/cim/frequently-asked-questions">Frequently Asked Questions</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/cim/apply/">
+                                        Apply for the CIM<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/cim/members/">Member Login</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Certified International Wealth Manager (CIWM) <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Certified International Wealth Manager (CIWM)
+                                </a>
+                                <li>
+                                    <a href="/en/credentials/ciwm">About the CIWM</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ciwm/requirements">Requirements to Earn the CIWM</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ciwm/maintenance">Maintaining the CIWM</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ciwm/benefits">Benefits of Holding the CIWM</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ciwm/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ciwm/for-consumers">Information for Consumers</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ciwm/frequently-asked-questions">Frequently Asked Questions</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ciwm/apply/">Apply for the CIWM</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/ciwm/members/">Member Login</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Designated Financial Services Advisor (DFSA<sup>&trade;</sup>
+                                ) <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Designated Financial Services Advisor (DFSA<sup>&trade;</sup>
+                                    )
+                                </a>
+                                <li>
+                                    <a href="/en/credentials/dfsa/">
+                                        About the DFSA<sup>&trade;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/dfsa/requirements">
+                                        Requirements to Earn the DFSA<sup>&trade;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/dfsa/maintenance">
+                                        Maintaining the DFSA<sup>&trade;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/dfsa/benefits">
+                                        Benefits of Holding the DFSA<sup>&trade;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/dfsa/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/dfsa/for-consumers">Information for Consumers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Estate &Trust Professional (MTI<sup>&reg;</sup>
+                                ) <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Estate &Trust Professional (MTI<sup>&reg;</sup>
+                                    )
+                                </a>
+                                <li>
+                                    <a href="/en/credentials/mti">
+                                        About the MTI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/mti/requirements">
+                                        Requirements to Earn the MTI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/mti/maintenance">
+                                        Maintaining the MTI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/mti/benefits">
+                                        Benefits of Holding the MTI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/mti/professional-conduct-and-governance">Professional Conduct and Governance</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/mti/for-consumers">Information for Consumers</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/mti/frequently-asked-questions">Frequently Asked Questions</a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/mti/apply/">
+                                        Apply for the MTI<sup>&reg;</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/credentials/mti/members/">Member Login</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="" href="/corporate-solutions/">
+                        Corporate Solutions                        <em class="fa fa-angle-right"></em>
+                    </a>
+                </li>
+                <li>
+                    <a class="nextMenu" href="#">
+                        Platforms                        <em class="fa fa-angle-right"></em>
+                    </a>
+                    <a class="topBackMenu" href="#" style="display:none;" title="Back">
+                        <em class="fa fa-angle-left mr-3"></em>
+                        Back
+                    </a>
+                    <ul class="levelMenu-1">
+                        <li>
+                            <a class="nextMenu" href="#">
+                                CSI Live <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    CSI Live
+                                </a>
+                                <li>
+                                    <a href="/en/platforms/live/">View Upcoming &On-Demand Webinars</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Financial Literacy Month <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Financial Literacy Month
+                                </a>
+                                <li>
+                                    <a href="/en/platforms/financial-literacy-month/">View All Financial Literacy Month Events</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                CSI Podium <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    CSI Podium
+                                </a>
+                                <li>
+                                    <a href="/en/platforms/csi-podium/">Host A Webinar With CSI</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                CSI TalentPro <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    CSI TalentPro
+                                </a>
+                                <li>
+                                    <a href="https://talentpro.csi.ca/en/">Find The Right Candidates, Faster</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nextMenu" href="#">
+                        About                        <em class="fa fa-angle-right"></em>
+                    </a>
+                    <a class="topBackMenu" href="#" style="display:none;" title="Back">
+                        <em class="fa fa-angle-left mr-3"></em>
+                        Back
+                    </a>
+                    <ul class="levelMenu-1">
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Our Company  <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Our Company 
+                                </a>
+                                <li>
+                                    <a href="/en/about/">About CSI</a>
+                                </li>
+                                <li>
+                                    <a href="/en/about/press-releases/">Press Releases</a>
+                                </li>
+                                <li>
+                                    <a href="/en/about/partners/">Partners</a>
+                                </li>
+                                <li>
+                                    <a href="/en/about/contact/">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Our People <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Our People
+                                </a>
+                                <li>
+                                    <a href="/en/about/leadership/">Leadership</a>
+                                </li>
+                                <li>
+                                    <a href="https://careers.moodys.com/">Careers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nextMenu" href="#">
+                                Connect With Us <em class="fa fa-angle-right"></em>
+                            </a>
+                            <ul class="levelMenu-2">
+                                <a class="backMenu" href="#">
+                                    <em class="fa fa-angle-left mr-3"></em>
+                                    Connect With Us
+                                </a>
+                                <li>
+                                    <a href="https://linkedin.com/company/csi-canada">LinkedIn</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/csiglobal">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/canadian_securities_institute/">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/CSIGlobalEd">Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/CSIGlobalEd/">YouTube</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- END menu -->
+        <!-- NAV include goes here End-->
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- main content -->
+                    <div class="yui-content">
+                        <h1>Enrolment Details</h1>
+                        <div class="yui-g">
+                            <div class="yui-u first" >
+                                <p style="font-family: Arial, Helvetica, sans-serif;">
+                                    <b >Name</b>
+                                    :
+			Edward Zhang
+                                </p>
+                            </div>
+                            <div class="yui-u">
+                                <p style="font-family: Arial, Helvetica, sans-serif;">
+                                    <b>Student ID</b> : 1109851
+                                </p>
+                            </div>
+                        </div>
+                        <p style="font-family: Arial, Helvetica, sans-serif;">
+                            Details with regard to your course status and exam / assignment mark can be found in the table below. Please
+					<a href="../student/certificateDetail.do?sceid=3292439" style="font-weight:bold;" >click here</a>
+                            to download, email or print your Student Performance Record, Notice of Course Completion or your Transcript.
+                        </p>
+                        <table class="mycsiTbl">
+                            <tr>
+                                <th style="font-size:140%; font-family: Arial, Helvetica, sans-serif;" colspan="5">Canadian Securities Course - 
+			Course
+			(English)
+		</th>
+                            </tr>
+                            <tr valign="top" class="rowCount1">
+                                <td>
+                                    <b>Status</b>
+                                    :
+	   Passed
+	  
+                                </td>
+                                <td>
+                                    <b>Final Mark</b>
+                                    : 82.5%	  
+                                </td>
+                            </tr>
+                            <tr valign="top" class="rowCount1">
+                                <td>
+                                    <b>Enrolment Date</b>
+                                    :
+	    2022-07-12
+                                </td>
+                                <td>
+                                    <b>Expiry Date</b>
+                                    :
+		2023-07-31
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="mycsiTbl">
+                            <tr>
+                                <th style="font-size:110%; font-family: Arial, Helvetica, sans-serif;" colspan="5">Assessments</th>
+                            </tr>
+                            <tr class="row2">
+                                <td>
+                                    <b>Exam Name</b>
+                                </td>
+                                <td>
+                                    <b>Status</b>
+                                </td>
+                                <td style="text-align:center;">
+                                    <b>Exam Date</b>
+                                </td>
+                                <td style="text-align:center;">
+                                    <b>Attempt</b>
+                                </td>
+                                <td style="text-align:center;">
+                                    <b>Mark</b>
+                                </td>
+                            </tr>
+                            <tr valign="top" class="rowCount1">
+                                <td>Exam 1</td>
+                                <td>Passed</td>
+                                <td style="text-align:center;">2022-08-13</td>
+                                <td style="text-align:center;">1</td>
+                                <td style="text-align:center;">81.0%</td>
+                            </tr>
+                            <tr valign="top" class="rowCount1">
+                                <td>Exam 2</td>
+                                <td>Passed</td>
+                                <td style="text-align:center;">2023-07-17</td>
+                                <td style="text-align:center;">1</td>
+                                <td style="text-align:center;">84.0%</td>
+                            </tr>
+                        </table>
+                        <div class="navButtons">
+                            <span class="btn btn-link" id="previous_btn">
+                                <img border="0" alt="Previous page" src="images/button_previous_page.gif"/>
+                            </span>
+                        </div>
+                    </div>
+                    <script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750">
+                        //previous button onClick
+                        $("#previous_btn").click(function() {
+                            return history.back();
+                        });
+                    </script>
+                    <!-- END main content -->
+                </div>
+            </div>
+        </div>
+        <!-- Start footer -->
+
+            <div class="footer-copy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                            © <span id="currentYear"></span>
+                            <div id="text-2" class="widget widget_text">
+                                <div class="textwidget">
+                                    <p>
+                                        Moody's Analytics Global Education (Canada), Inc. 
+                        
+                       <span>23.05.02.bb9 2023-05-18
+                      </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-7 col-lg-7 text-right">
+                            <div class="menu-footer-menu-container">
+                                <ul >
+                                    <li id="menu-item-5803" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5803">
+                                        <a target="_blank" rel="noopener" href="https://www.csi.ca/student/en_ca/sitemap.xhtml" style="font-family: Arial, Helvetica, sans-serif;">Sitemap</a>
+                                    </li>
+                                    <li id="menu-item-10450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10450">
+                                        <a href="https://www.csi.ca/en/cookies-notice/" style="font-family: Arial, Helvetica, sans-serif;">Cookies Notice</a>
+                                    </li>
+                                    <li id="menu-item-10459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10459">
+                                        <a href="https://www.csi.ca/en/terms-of-use/" style="font-family: Arial, Helvetica, sans-serif;">Terms of Use</a>
+                                    </li>
+                                    <li id="menu-item-10449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-10449">
+                                        <a href="https://www.csi.ca/en/privacy-policy/" style="font-family: Arial, Helvetica, sans-serif;">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END footer -->
+    </body>
+</html>
+<!-- include bottomscripts -->
+<!-- scripts located at bottom of page for load performance -->
+<!-- set the context for the jscript includes -->
+<!-- assign a default -->
+<!-- use the contexts to specify the scripts to be included-->
+<!-- create special contexts -->
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3LP9F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript" src="../inc/jscript/main_menu/WP_mainmenu.js"></script>
+<script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" type="text/javascript" src="../inc/jscript/main_menu/custom.js"></script>
+<script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" src="../inc/jscript/get_csrf.js"></script>
+<script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750" src="../inc/jscript/get_session_vars.js"></script>
+<script nonce="42ef1017-3cbc-44cc-85da-a05f13eaf750">
+    $(".btnSearch").click(function() {
+        $("form[name=SForm]").submit();
+
+    })
+</script>
+<!-- END include scripts -->
+<!-- begin credit card payment -->
